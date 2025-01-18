@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOMEPAGE</title>
+  <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+    .carousel-item img {
+        height: 80vh;
+        object-fit: cover;
+    }
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .movie-title {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .movie-description {
+        font-size: 1.2rem;
+    }
+    .btn-custom {
+        background-color: #e50914;
+        border: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+        .carousel-item img {
+            height: 70vh;
+        }
+        .movie-title {
+            font-size: 2.5rem;
+        }
+        .movie-description {
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .carousel-item img {
+            height: 60vh;
+        }
+        .carousel-caption {
+            padding: 15px;
+        }
+        .movie-title {
+            font-size: 2rem;
+        }
+        .movie-description {
+            font-size: 0.9rem;
+        }
+        .btn-custom {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .carousel-item img {
+            height: 50vh;
+        }
+        .carousel-caption {
+            padding: 10px;
+        }
+        .movie-title {
+            font-size: 1.5rem;
+        }
+        .movie-description {
+            font-size: 0.8rem;
+        }
+        .btn-custom {
+            font-size: 0.8rem;
+            padding: 6px 12px;
+        }
+    }
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🎬 CinematicRealm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+     
+  </li>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutsection.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">CONTACT US</a>
+          </li>
+           <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: rgb(216, 210, 210);">GENRE</a>
+    <ul class="dropdown-menu" style="background-color: rgb(82, 80, 80)">
+      <li><a class="dropdown-item" href="adventure.html" >Adventure Movies</a></li>
+      <li><a class="dropdown-item" href="actionmovies.html">Action Movies</a></li>
+      <li><a class="dropdown-item" href="romance.html">Romantic Movies</a></li>
+      <li><a class="dropdown-item" href="thriller.html">Thriller Movies</a></li>
+   
+    </ul>
+        </ul>
+        
+     
+      </div>
+    </div>
+  </nav>
+      <section class="hero image-as-background" style="background-image: url('https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/04/cover-image-1-26.jpg');">
+        <div class="hero-container">
+          <p class="animate fadeInLeft delay-400">The Best Cinematic Experience</p>
+          <h1 class="hero-title animate fadeInLeft delay-600" style="font-size: 80px; color: rgb(216, 210, 210);">EXPLORE, BOOK, AND ENJOY YOUR FAVORITE MOVIES!!!</h1>
+          <a href="#starting" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Get Started!</a>
+        </div>
+      </section>
+    <div class="headingSection" id ="starting">
+      <a href="trendingmovies.html">  <h2>TRENDING MOVIES <i class="fa-solid fa-fire"></i></h2></a>
+    </div>
+    
+    <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://cdn.marvel.com/content/1x/avengersendgame_lob_mas_dsk_01.jpg" class="d-block w-100" alt="Avengers: Endgame">
+              <div class="carousel-caption">
+                  <h5 class="movie-title">Avengers: Endgame</h5>
+                  <p class="movie-description">The epic conclusion to the Marvel saga.</p>
+                  <a href="avengersEndgame.html" class="btn btn-custom">Book Now</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://manlymovie.net/wp-content/uploads/2022/05/top-gun-maverick-ver5-xlg-2-1.jpg" class="d-block w-100" alt="Top Gun: Maverick">
+              <div class="carousel-caption">
+                  <h5 class="movie-title">Top Gun: Maverick</h5>
+                  <p class="movie-description">The return of Maverick in this high-octane sequel.</p>
+                  <a href="topGunMaverick.html" class="btn btn-custom">Book Now</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://i0.wp.com/awardswatch.com/wp-content/uploads/2023/02/Screenshot-2023-02-13-at-8.01.58-AM.png?fit=3735%2C2105&ssl=1&resize=1280%2C7200" class="d-block w-100" alt="Titanic">
+              <div class="carousel-caption">
+                  <h5 class="movie-title">Titanic</h5>
+                  <p class="movie-description">A timeless love story aboard the doomed ocean liner.</p>
+                  <a href="titanic.html" class="btn btn-custom">Book Now</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/1*gprOYOIrGqCYpETGN1q1rg.jpeg" class="d-block w-100" alt="The Dark Knight">
+              <div class="carousel-caption">
+                  <h5 class="movie-title">The Dark Knight</h5>
+                  <p class="movie-description">Batman faces off against the Joker in this gritty action film.</p>
+                  <a href="darkKnight.html" class="btn btn-custom">Book Now</a>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
+
+
+  <div class="headingSection">
+    <a href="actionmovies.html">  <h2>ACTION MOVIES <i class="fa-solid fa-hand-fist"></i></h2></a>
+  </div>
+  <br>
+  <div id="movieCarouse2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#movieCarouse2" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#movieCarouse2" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#movieCarouse2" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#movieCarouse2" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i0.wp.com/thegrandshuckett.com/wp-content/uploads/2015/04/Furious-7.jpg?fit=940%2C400&ssl=1" class="d-block w-100" alt="Furious 7">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Furious 7</h5>
+                <p class="movie-description">Dominic and his crew face their biggest threat yet.</p>
+                <a href="furious7.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://manlymovie.net/wp-content/uploads/2022/05/top-gun-maverick-ver5-xlg-2-1.jpg" class="d-block w-100" alt="Top Gun: Maverick">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Top Gun: Maverick</h5>
+                <p class="movie-description">The return of Maverick in this high-octane sequel.</p>
+                <a href="topGunMaverick.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://ntvb.tmsimg.com/assets/p11730466_v_h8_al.jpg?w=1280&h=720" class="d-block w-100" alt="The Fate of the Furious">
+            <div class="carousel-caption">
+                <h5 class="movie-title">The Fate of the Furious</h5>
+                <p class="movie-description">A betrayal from within threatens the crew.</p>
+                <a href="fateoftheFurious.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.squarespace-cdn.com/content/v1/587e54ab3e00becc5a895fbf/1534252795286-AEEBQTOO745O1ABF58X6/Mission+Impossible+2.jpg?format=1500w" class="d-block w-100" alt="Mission Impossible">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Mission Impossible</h5>
+                <p class="movie-description">Ethan Hunt embarks on his most dangerous mission yet.</p>
+                <a href="missionImpossible.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarouse2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarouse2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+  <div class="headingSection">
+    <a href="adventure.html">  <h2>ADVENTURE MOVIES <i class="fa-solid fa-mountain-sun"></i></h2></a>
+  </div>
+  <br>
+  <div id="movieCarouse3" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#movieCarouse3" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#movieCarouse3" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#movieCarouse3" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#movieCarouse3" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i0.wp.com/theclimatenews.co.uk/wp-content/uploads/2023/12/Avatar-image.jpg?resize=1080%2C675&ssl=1" class="d-block w-100" alt="Avatar">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Avatar</h5>
+                <p class="movie-description">Experience the world of Pandora like never before.</p>
+                <a href="avatar.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://geekgirlpenpals.com/wp-content/uploads/2015/06/logo-e1434080406682.png" class="d-block w-100" alt="Jurassic World">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Jurassic World</h5>
+                <p class="movie-description">Dinosaurs roam the earth once again.</p>
+                <a href="jurasicpark.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/2c70c38075924358afbbf210cab6ddf9ebed7a9d47c87713c8759d5758b7dadb.jpg" class="d-block w-100" alt="The Lord of the Rings">
+            <div class="carousel-caption">
+                <h5 class="movie-title">The Lord of the Rings</h5>
+                <p class="movie-description">A journey to destroy the One Ring.</p>
+                <a href="lordofrings.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://ntvb.tmsimg.com/assets/p14113286_v_h10_af.jpg?w=960&h=540" class="d-block w-100" alt="The Lion King">
+            <div class="carousel-caption">
+                <h5 class="movie-title">The Lion King</h5>
+                <p class="movie-description">The timeless story of Simba's journey.</p>
+                <a href="lionking.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarouse3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarouse3" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+  <div class="headingSection">
+    <a href="romance.html">  <h2>ROMANTIC MOVIES <i class="fa-solid fa-heart"></i></h2></a>
+  </div>
+  <br>
+  <div id="movieCarouse4" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#movieCarouse4" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#movieCarouse4" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#movieCarouse4" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#movieCarouse4" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i0.wp.com/awardswatch.com/wp-content/uploads/2023/02/Screenshot-2023-02-13-at-8.01.58-AM.png?fit=3735%2C2105&ssl=1&resize=1280%2C7200" class="d-block w-100" alt="Titanic">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Titanic</h5>
+                <p class="movie-description">A timeless love story aboard the doomed ocean liner.</p>
+                <a href="titanic.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.imax.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fc4ucztjx9pmu%2Fldassset-fid-2677%2Fd7154ab42ee8ba41d89a91ac62cc6a04%2F9264421c98009462c5f710a33f5a9192.jpg&w=1920&q=75" class="d-block w-100" alt="The Twilight Saga">
+            <div class="carousel-caption">
+                <h5 class="movie-title">The Twilight Saga</h5>
+                <p class="movie-description">A love story between a vampire and a human.</p>
+                <a href="twighlightsaga.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://media.pitchfork.com/photos/650c9339dc33d2bb960c151e/16:9/w_1280,c_limit/Lady-Gaga-A-Star-Is-Born-Soundtrack.jpg" class="d-block w-100" alt="A Star is Born">
+            <div class="carousel-caption">
+                <h5 class="movie-title">A Star is Born</h5>
+                <p class="movie-description">A musician helps a young singer find fame.</p>
+                <a href="astarisborn.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.gatheringplace.org/assets/2511/12_crazy-rich-asians-ka-1920.jpg" class="d-block w-100" alt="Crazy Rich Asians">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Crazy Rich Asians</h5>
+                <p class="movie-description">A romantic comedy exploring love and culture.</p>
+                <a href="crazyrichasians.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarouse5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarouse4" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+  <div class="headingSection">
+    <a href="thriller.html">  <h2>THRILLER MOVIES <i class="fa-solid fa-skull"></i></h2></a>
+  </div>
+  <br>
+  <div id="movieCarouse5" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#movieCarouse5" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#movieCarouse5" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#movieCarouse5" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#movieCarouse5" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://samuelveryspecialblog.wordpress.com/wp-content/uploads/2014/10/inception.jpeg" class="d-block w-100" alt="Inception">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Inception</h5>
+                <p class="movie-description">A thief who enters the dreams of others to steal secrets.</p>
+                <a href="inception.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.timothyhallinan.com/wp-content/uploads/2024/03/shutter-island-book-vs-movie-3.jpg" class="d-block w-100" alt="Shutter Island">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Shutter Island</h5>
+                <p class="movie-description">A U.S. Marshal investigates a psychiatric facility.</p>
+                <a href="shutterisland.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://batman-on-film.com/wp-content/uploads/2018/07/TDK-banner-dent-joker-batman-1.jpg" class="d-block w-100" alt="The Dark Knight">
+            <div class="carousel-caption">
+                <h5 class="movie-title">The Dark Knight</h5>
+                <p class="movie-description">Batman battles the Joker in Gotham City.</p>
+                <a href="darkKnight.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.marvel.com/content/1x/avengersendgame_lob_mas_dsk_01.jpg" class="d-block w-100" alt="A Quiet Place">
+            <div class="carousel-caption">
+                <h5 class="movie-title">Avengers Endgame</h5>
+                <p class="movie-description">The epic conclusion to the marvel saga</p>
+                <a href="avengersEndgame.html" class="btn btn-custom">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarouse5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarouse5" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

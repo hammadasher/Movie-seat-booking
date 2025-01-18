@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Nunito);
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito, sans-serif;
+}
+h1 {
+   font-size: 2.5em;
+}
+p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: #333;
+}
+.slide {
+  position: relative;
+  padding: 20vh 5%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+.title {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+.slide:nth-child(2n) .title {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+.header {
+  text-align: center;
+  font-size: 1.75em;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+#title {
+  background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2luZW1hfGVufDB8fDB8fHww");
+  z-index: 2;
+}
+#slide1 {
+  background-image: url("https://www.geo.tv/assets/uploads/updates/2017-10-04/161185_7056585_updates.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+#slide2 {
+  background-image: url("https://acpkhi.com/Audi%20I/2.jpg");
+  z-index: 2;
+}
+#slide3 {
+  background-image: url("https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_2560,h_1696/https://www.mumtazgroup.com.pk/wp-content/uploads/2020/08/kilyan-sockalingum-nW1n9eNHOsc-unsplash-scaled.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+
+  .title {
+    width: 90%;
+    padding: 8%;
+  }
+  .slide {
+    padding: 15vh 5%;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .title {
+    width: 95%;
+    padding: 10%;
+  }
+  .slide {
+    padding: 10vh 5%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="title" class="slide header">
+        <h1 style="font-weight: 900; font-family: 'Times New Roman', Times, serif; font-style: italic; color: rgb(223, 190, 181);">ABOUT US</h1>
+    </div>
+    <div id="slide1" class="slide">
+        <div class="title">
+          <h1>Welcome to CinematicRealm</h1>
+          <p>Step into a world of cinematic magic at CinematicRealm. We bring the latest blockbusters and timeless classics to life in stunning high-definition.</p>
+        </div>
+    </div>
+    <div id="slide2" class="slide">
+        <div class="title">
+          <h1>Exceptional Experience</h1>
+          <p>Enjoy crystal-clear visuals, immersive sound, and plush seating designed for ultimate comfort. We are dedicated to making every movie moment unforgettable</p>
+        </div>
+        <img src="https://mecinemas.com/images/atrium-1.jpg">
+        <img src="https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2019/08/image-2-4-1024x640.jpg"> 
+    </div>
+    <div id="slide3" class="slide">
+        <div class="title">
+          <h1>Community & Connection</h1>
+          <p>At CinematicRealm, we believe in creating memories. From family outings to date nights, our theater is a place where stories unite and communities thrive.</p>
+        </div>
+    </div>
+</body>
+</html>

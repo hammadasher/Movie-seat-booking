@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="seat.css">
+</head>
+<body>
+  <div class=container>
+    <div class=content style=display:block;width:1000px;height:562px>
+      <div class=container-full>
+        <div class="animated hue"></div><img class=backgroundImage src="https://drive.google.com/thumbnail?id=1_ZMV_LcmUXLsRokuz6WXGyN9zVCGfAHp&sz=w1920"> <img class=boyImage src="https://drive.google.com/thumbnail?id=1eGqJskQQgBJ67myGekmo4YfIVI3lfDTm&sz=w1920">
+        <div class=container>
+          <div class=cube>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face left text"></div>
+            <div class="face right text"></div>
+            <div class="face front"></div>
+            <div class="face back text"></div>
+          </div>
+        </div>
+        <div class=container-reflect>
+          <div class=cube>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face left text"></div>
+            <div class="face right text"></div>
+            <div class="face front"></div>
+            <div class="face back text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="movie-container">
+      <label>SELECT THE SEATS YOU WANT TO BOOK</label>
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="seatsystem">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+     <button id="bookticket" class="bookticket" onclick="showAlert()">BOOK SEAT!!!</button>
+     <div id="alert-box" class="alert-box hidden">
+      <div class="alert-content">
+          <span class="close-btn" onclick="closeAlert()">&times;</span>
+          <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">TICKET RESERVED!!!</h2>
+          <p style="color: red; font-size: 20px;">Tickets have been booked!!!</p>
+          <button onclick="closeAlert()">Close</button>
+      </div>
+  </div>
+
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

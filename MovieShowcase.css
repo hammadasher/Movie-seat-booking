@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d0d0d;
+}
+.movie-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-bottom: 5px solid #ff1e1e;
+    box-shadow: 0 8px 24px rgba(234, 63, 63, 0.7), 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.movie-poster {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.movie-container:hover .movie-poster {
+    transform: scale(1.05);
+}
+.overlay {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.movie-info {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+    border: 3px solid rgba(255, 99, 99, 0.7);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+.Ticket{
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+position: relative;
+display: inline-block;
+padding: 25px 30px;
+margin: 40px 0;
+color: #03e9f4;
+text-decoration: none;
+text-transform: uppercase;
+transition: 0.5s;
+letter-spacing: 4px;
+overflow: hidden;
+margin-right: 50px;
+border: 1px solid #03e9f4;
+}
+.Ticket:hover{
+background: #03e9f4;
+color: #050801;
+box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+-webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}

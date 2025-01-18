@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #121212;
+            padding: 20px;
+        }
+        .contact-form {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(28, 28, 28, 0.9);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid #03e9f4;
+        }
+        h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 1px solid #03e9f4;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #fff;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            border-color: #03e9f4;
+            box-shadow: 0 0 5px rgba(3, 233, 244, 0.5);
+        }
+        textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: #03e9f4;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #028f94;
+        }
+        .submit-btn:focus {
+            outline: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+                border-width: 1px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .form-control {
+                font-size: 0.9rem;
+                padding: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .form-control {
+                font-size: 0.85rem;
+                padding: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" id = "sendMessageButton" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>   
+  
+   <script>
+        document.getElementById("sendMessageButton").addEventListener("click", function () {
+            alert("Your message has been sent!");
+        });
+    </script>
+
+</body>
+</html>
